@@ -1,21 +1,3 @@
-
-# Symbiotic Evaluation Project
-
-This repository contains the materials for the Symbiotic Evaluation project.
-
-## Overview
-The goal of this project is to analyze the symbiotic relationships within the specified ecosystem. The analysis includes data collection, visualization, and interpretation of mutualistic interactions.
-
-## Technologies Used
-- Python
-- Matplotlib
-- Pandas
-
-## Code Example
-
-Here is a basic Python script used for data visualization in this project:
-
-```python
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -30,9 +12,11 @@ plt.xlabel('Species A Population')
 plt.ylabel('Species B Population')
 plt.grid(True)
 plt.show()
-How to Run
-Ensure you have Python installed.
-Clone this repository.
-Run the script using python script_name.py.
-AuthorNatalja NWK-art
-]
+## How to Run
+1. Ensure you have Python installed.
+2. Clone this repository.
+3. Run the script using `python script_name.py`.
+
+## Author
+Natalja NWK-art
+
