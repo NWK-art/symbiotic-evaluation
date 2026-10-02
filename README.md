@@ -11,22 +11,25 @@ reflect symbiotic relationship dynamics.
 *   NumPy
 *   Matplotlib
 
-## Code Example
+## Core Logic Snippet
 
-Here is a basic Python script used for data visualization in this project:
+This snippet shows the actual agent class used in `analysis.py`. It demonstrates how each Mech-Species calculates its population based on its partner's state:
 
 ```python
-import matplotlib.pyplot as plt
-import numpy as np
+class Agent:
+    def __init__(self, name, base_population, sensitivity):
+        self.name = name
+        self.base_population = base_population
+        self.sensitivity = sensitivity
 
-# Sample data for symbiotic interaction strength
-species_a = np.array([1, 2, 3, 4, 5])
-species_b = np.array([2, 4, 6, 8, 10])
+    def calculate_population(self, partner_population):
+        # The population grows proportionally to the partner's presence
+        return self.base_population + (self.sensitivity * partner_population)
 
-plt.figure(figsize=(8, 6))
-plt.plot(species_a, species_b, marker='o', linestyle='-', color='green')
-plt.title('Symbiotic Interaction Strength')
-plt.xlabel('Species A Population')
-plt.ylabel('Species B Population')
-plt.grid(True)
-plt.show()
+# Example interaction between two Mech-Species
+species_a = Agent("Mech-Species A", base_population=10, sensitivity=0.5)
+species_b = Agent("Mech-Species B", base_population=10, sensitivity=0.5)
+
+# Simulating one step of interaction
+pop_a_next = species_a.calculate_population(species_b.base_population)
+pop_b_next = species_b.calculate_population(species_a.base_population)
