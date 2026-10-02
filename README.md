@@ -8,7 +8,7 @@ reflect symbiotic relationship dynamics.
 ## Technologies Used
 - Python
 - Matplotlib
-- Pandas
+
 
 ## Code Example
 
