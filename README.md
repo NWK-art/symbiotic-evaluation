@@ -33,3 +33,4 @@ species_b = Agent("Mech-Species B", base_population=10, sensitivity=0.5)
 # Simulating one step of interaction
 pop_a_next = species_a.calculate_population(species_b.base_population)
 pop_b_next = species_b.calculate_population(species_a.base_population)
+
