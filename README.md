@@ -3,8 +3,8 @@
 This repository contains the materials for the Symbiotic Evaluation project.
 
 ## Overview
-The goal of this project is to analyze the symbiotic relationships within the specified ecosystem. The analysis includes data collection, visualization, and interpretation of mutualistic interactions.
-
+This project simulates the interaction of two mechanical species (Mech‑Species) modeled as simple AI agents. Each agent adjusts its population based on the presence of its symbiotic partner, demonstrating a basic ecosystem model driven by agent logic. The simulation uses Python with NumPy for calculations and Matplotlib for data visualization, illustrating how agent‑based logic can
+reflect symbiotic relationship dynamics.
 ## Technologies Used
 - Python
 - Matplotlib
