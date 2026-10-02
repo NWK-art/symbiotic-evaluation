@@ -13,8 +13,6 @@ reflect symbiotic relationship dynamics.
 
 ## Core Logic Snippet
 
-This snippet shows the actual agent class used in `analysis.py`. It demonstrates how each Mech-Species calculates its population based on its partner's state:
-
 ```python
 class Agent:
     def __init__(self, name, base_population, sensitivity):
@@ -23,14 +21,4 @@ class Agent:
         self.sensitivity = sensitivity
 
     def calculate_population(self, partner_population):
-        # The population grows proportionally to the partner's presence
         return self.base_population + (self.sensitivity * partner_population)
-
-# Example interaction between two Mech-Species
-species_a = Agent("Mech-Species A", base_population=10, sensitivity=0.5)
-species_b = Agent("Mech-Species B", base_population=10, sensitivity=0.5)
-
-# Simulating one step of interaction
-pop_a_next = species_a.calculate_population(species_b.base_population)
-pop_b_next = species_b.calculate_population(species_a.base_population)
-
