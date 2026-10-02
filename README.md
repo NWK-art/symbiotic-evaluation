@@ -1,3 +1,4 @@
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -11,12 +12,6 @@ plt.title('Symbiotic Interaction Strength')
 plt.xlabel('Species A Population')
 plt.ylabel('Species B Population')
 plt.grid(True)
-plt.show()
-## How to Run
-1. Ensure you have Python installed.
-2. Clone this repository.
-3. Run the script using `python script_name.py`.
+plt.show()```
 
-## Author
-Natalja NWK-art
 
